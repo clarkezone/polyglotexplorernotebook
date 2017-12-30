@@ -9,7 +9,7 @@ The last 15 years or so of my professional life have been defined in no small me
 |Podcast|?|?|http://www.newrustacean.com/|?|?|
 |V1.0 stable released|March 2012|February 15, 2016|May 15, 2015|?|September 9, 2014|
 |Canonical Book|The Go Programming Language by Alan A. A. Donovan,‎ Brian W. Kernighan https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_1?ie=UTF8&qid=1514570808&sr=8-1&keywords=go+programming+language+books|Kotlin in Action 1st Edition by Dmitry Jemerov, Svetlana Isakova https://www.amazon.com/Kotlin-Action-Dmitry-Jemerov/dp/1617293296/ref=sr_1_1?s=books&ie=UTF8&qid=1514571373&sr=1-1&keywords=kotlin+in+action|"the book" https://doc.rust-lang.org/book/second-edition/||The Swift Programming Language https://swift.org/documentation/TheSwiftProgrammingLanguage(Swift4.0.3).epub|
-|The Hook|Fast, lightweight web||||
+|The Hook|Fast, lightweight, platform independent web server.  Ideal for micro-services, REST, etc.  Fun to use, simple, functional. ||||
 ||||||
 
 ## Tools
