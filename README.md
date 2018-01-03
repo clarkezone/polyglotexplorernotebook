@@ -30,10 +30,29 @@ func main() {
 	fmt.Println("Hello, 世界")
 }
 ```
+Kotlin:
+```kotlin
+fun main(args: Array<String>) {
+    println("Hello, world!")
+}
+```
+
 Rust:
 ```rust
 fn main()
 {
     print!("Hello 世界");
 }
+```
+
+Dart:
+```dart
+void main() {
+    print('hello 世界');
+}
+```
+
+Swift:
+```swift
+print("hello 世界")
 ```
