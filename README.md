@@ -49,36 +49,63 @@ fn main()
 Swift:
 ```swift
 print("hello 世界")
-
 ```
 
-## Optional Values
-Swift:
-```swift
-let test : String? = "cool"
-
-if let valid = test {
-    print(valid)
-} else {
-    print("no value")
-}
-```
-
-Rust:
-```rust
-fn main() {
-    let _my_optional = Some("hello");
-    let _my_optional2 : Option<String> = Some(String::from("hello"));
-
-    match _my_optional {
-        Some(x) => println!("Result: {}", x),        
-        None    => println!("no string"),
-    }
-}
-=======
 Dart:
 ```dart
 void main() {
     print('hello 世界');
 }
 ```
+
+## Optional Values
+Swift:
+```swift
+func printVal(thing: String?) {
+    if let valid = thing {
+        print(valid)
+    } else {
+        print("no value")
+    }
+}
+
+// force unwrapping an optional value
+let test : String? = "first example"
+print(test!)
+
+// using optional binding implemented in printVal
+var test2 : String? = "cool"
+printVal(thing:test)
+
+test2 = nil
+printVal(thing:test)
+```
+
+Rust:
+```rust
+fn main() {
+    let mut _my_optional = Some("hello");
+ 
+    // take a reference to contained string
+    if let Some(ref m) = _my_optional {
+        println!("{}", m)
+    }
+    
+    _my_optional = None;
+ 
+    match _my_optional {
+        Some(x) => println!("Result: {}", x),        
+        None    => println!("no string"),
+    }
+    
+    let _my_optional2 : Option<String> = Some(String::from("hello dynamic string"));
+    
+    //Remove contained string, destroying optional
+    let unwrapped_msg = _my_optional2.unwrap();
+    println!("{}", unwrapped_msg); 
+
+    // panic if cool is none
+    let cool = Some("ss");
+    cool.expect("no string");
+}
+
