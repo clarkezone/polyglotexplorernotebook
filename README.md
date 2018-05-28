@@ -37,3 +37,28 @@ fn main()
     print!("Hello 世界");
 }
 ```
+
+## Optional Values
+Swift:
+```swift
+let test : String? = "cool"
+
+if let valid = test {
+    print(valid)
+} else {
+    print("no value")
+}
+```
+
+Rust:
+```rust
+fn main() {
+    let _my_optional = Some("hello");
+    let _my_optional2 : Option<String> = Some(String::from("hello"));
+
+    match _my_optional {
+        Some(x) => println!("Result: {}", x),        
+        None    => println!("no string"),
+    }
+}
+```
